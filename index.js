@@ -24,9 +24,9 @@ setInterval(function() {
   io.sockets.emit('message', 'server is still running');
 }, 1000);
 
-
 //dictionary of new players
 var players = {};
+var playerSpd = 3;
 
 //register a new players when they connect
 io.on('connection', function(socket) {
@@ -40,17 +40,17 @@ io.on('connection', function(socket) {
   //update new layer positions
   socket.on('movement', function(data) {
     var player = players[socket.id] || {};
-    if (data.left) {
-      player.x -= 5;
+    if (data[LEFT_ARROW]) {
+      player.x -= playerSpd;
     }
-    if (data.up) {
-      player.y -= 5;
+    if (data[UP_ARROW]) {
+      player.y -= playerSpd; 
+	  }
+    if (data[RIGHT_ARROW]) {
+      player.x += playerSpd;
     }
-    if (data.right) {
-      player.x += 5;
-    }
-    if (data.down) {
-      player.y += 5;
+    if (data[DOWN_ARROW]) {
+      player.y += playerSpd 
     }
   });
   
