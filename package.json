@@ -1,0 +1,20 @@
+{
+  "name": "testit10",
+  "version": "1.0.0",
+  "description": "This sample demonstrates a tiny Hello World node.js app for [App Service Web App](https://docs.microsoft.com/azure/app-service-web).",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "testit10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://testit10@testit10.scm.azurewebsites.net:443/testit10.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
