@@ -3,8 +3,12 @@ An example of node.js multiplayer game
 
 visit http://testit10.azurewebsites.net/
 
-to test out the template
+Tap to move and swipe to shoot
+There is no collision detections yet
+or disconnection handling
 
-WASD to move
+Work in progress
+
+
 
 
