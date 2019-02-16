@@ -67,7 +67,7 @@ this.setup = function() {
 
 this.draw = function(){	
 
-	background(50,50,50);	
+	background(255,200,200);	
 	noStroke();		
 	for (var id in players) {
 		player = players[id];

@@ -8,7 +8,7 @@ console.log("dependencies loaded");
 var app = express();
 var server = http.Server(app);
 var io = socketIO(server);
-var portnum = process.env.PORT || 1337;
+var portnum = 31000;
 console.log("packages created");
 
 app.set('port', portnum);
